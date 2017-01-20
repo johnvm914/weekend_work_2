@@ -16,8 +16,8 @@
 
 class Superhero
 
-  attr_reader :name, :hitpoints, :attack, :alive, :has_special_tool
-  attr_writer :hitpoints, :attack, :alive, :has_special_tool
+  attr_reader :name
+  attr_accessor :hitpoints, :attack, :alive, :has_special_tool
 
   def initialize(input_hash)
     @alive = true
