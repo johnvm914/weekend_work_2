@@ -10,6 +10,17 @@
 
 class Yodel
 
+  attr_reader :segment, :count
+
+  def initialize(input_hash)
+    @segment = input_hash[:segment]
+    @count = input_hash[:count]
+  end
+
+  def articulate
+    return @segment * @count
+  end
+
 end
 
 
